@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+</head>
+<body>
+
+    <h2>Checkout</h2>
+    <hr />
+
+    <form>
+
+        <!-- SECTION 1 - Personal Details -->
+        <h3>Personal Details</h3>
+
+        <label for="fname">First Name:</label><br />
+        <input type="text" id="fname" name="fname" required placeholder="First Name" />
+        <br /><br />
+
+        <label for="lname">Last Name:</label><br />
+        <input type="text" id="lname" name="lname" required placeholder="Last Name" />
+        <br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required placeholder="Email" />
+        <br /><br />
+
+        <label for="phone">Phone:</label><br />
+        <input type="tel" id="phone" name="phone" required placeholder="Phone" />
+        <br /><br />
+
+
+        <!-- SECTION 2 - Delivery Address -->
+        <h3>Delivery Address</h3>
+
+        <label for="street">Street Address:</label><br />
+        <input type="text" id="street" name="street" required placeholder="Street Address" />
+        <br /><br />
+
+        <label for="city">City:</label><br />
+        <input type="text" id="city" name="city" required placeholder="City" />
+        <br /><br />
+
+        <label for="pincode">PIN Code:</label><br />
+        <input type="number" id="pincode" name="pincode" placeholder="PIN Code" />
+        <br /><br />
+
+
+        <!-- SECTION 3 - Delivery Preference -->
+        <h3>Delivery Preference</h3>
+
+        <input type="radio" id="standard" name="delivery" value="standard" />
+        <label for="standard">Standard Delivery</label>
+        <br />
+
+        <input type="radio" id="express" name="delivery" value="express" />
+        <label for="express">Express Delivery</label>
+        <br />
+
+        <input type="radio" id="pickup" name="delivery" value="pickup" />
+        <label for="pickup">Pick Up from Store</label>
+        <br /><br />
+
+
+        <!-- SECTION 4 - Schedule -->
+        <h3>Schedule</h3>
+
+        <label for="delivery-date">Preferred Delivery Date:</label><br />
+        <input type="date" id="delivery-date" name="delivery-date" />
+        <br /><br />
+
+        <label for="delivery-time">Preferred Delivery Time:</label><br />
+        <input type="time" id="delivery-time" name="delivery-time" />
+        <br /><br />
+
+
+        <!-- SECTION 5 - Buttons -->
+        <h3>Buttons</h3>
+
+        <input type="submit" value="Place Order" />
+        <input type="reset" value="Clear" />
+
+    </form>
+
+</body>
+</html>
